@@ -81,10 +81,10 @@
  */
 
 if (typeof Paho === "undefined") {
-  Paho = {};
+  window.Paho = {};
 }
 
-Paho.MQTT = (function (global) {
+window.Paho.MQTT = (function (global) {
 
   // Private variables below, these are only visible inside the function closure
   // which is used to define the module.
