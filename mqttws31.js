@@ -264,7 +264,7 @@ window.Paho.MQTT = (function (global) {
      * of all the component parts
      */
 
-    remLength = 0;
+    var remLength = 0;
     topicStrLength = new Array();
 
     // if the message contains a messageIdentifier then we need two bytes for that
