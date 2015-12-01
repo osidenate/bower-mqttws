@@ -1,4 +1,4 @@
-bower-mqttws
+bower-mqttws-es5
 ============
 
 Forked from https://github.com/TheRyanBurke/bower-mqttws
