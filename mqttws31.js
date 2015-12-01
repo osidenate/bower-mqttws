@@ -203,6 +203,8 @@ window.Paho.MQTT = (function (global) {
    */
   var format = function(error, substitutions) {
     var text = error.text;
+    var field, start;
+
     if (substitutions) {
       for (var i=0; i<substitutions.length; i++) {
         field = "{"+i+"}";
@@ -265,7 +267,7 @@ window.Paho.MQTT = (function (global) {
      */
 
     var remLength = 0;
-    topicStrLength = new Array();
+    var topicStrLength = new Array();
 
     // if the message contains a messageIdentifier then we need two bytes for that
     if (this.messageIdentifier != undefined)
